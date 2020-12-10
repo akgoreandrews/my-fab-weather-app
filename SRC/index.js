@@ -19,6 +19,7 @@ let currentTime = new Date();
 
       // SEARCH ENGINE
       function displayWeatherCondition(response) {
+       
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
