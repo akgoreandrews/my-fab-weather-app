@@ -24,6 +24,9 @@ li {
   padding: 0;
   text-transform: capitalize;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 .temperature {
   font: 60px;
   font-weight: 400;
