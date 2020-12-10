@@ -40,9 +40,12 @@ li {
 .weather-app {
   border: 1px solid #7c52ef;
   border-radius: 40px;
+
+  padding: 20px;
+}
+.weather-wrapper {
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
 }
 .current-weather {
   border: 1px solid #7c52ef;

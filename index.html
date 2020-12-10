@@ -15,6 +15,7 @@
 
 <body>
     <div class="container">
+        <div class="weather-wrapper">
         <div class="weather-app">
             <div class="card-body">
                 <div class="row">
@@ -39,7 +40,11 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <h2>
-                                <i class="fas fa-cloud-rain" id="rain-showers"></i>
+                                <div class="clearfix weather-temperature">
+                                    <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" class="float-left" />
+                                    <div class="float-left">
+                                    </div>
+                                </div>
                             </h2>
                         </div>
                         <div class="col-sm-3">
@@ -142,9 +147,10 @@
                     </p>
                 </div>
             </div> 
+       
+        </div> 
         <p class="signature"> <a href="https://github.com/akgoreandrews/my-fab-weather-app" target="blank" > Open-source code</a> by: Anne-Katherine Treur</p>
-
-        </div>
+</div>
     </div>
     <script src="src/index.js"></script>
 </body>
