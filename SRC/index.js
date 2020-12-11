@@ -31,7 +31,8 @@ function formatHours(timestamp) {
 
 
       // SEARCH ENGINE
-      function displayWeatherCondition(response) {
+      function displayWeatherCondition(response) {console.log
+        (response.data);
        
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -44,6 +45,12 @@ function formatHours(timestamp) {
   document.querySelector("#daily-description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
