@@ -1,5 +1,6 @@
 body {
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  background: linear-gradient(#e2eaf8, #f1f6ff);
 }
 h1 {
   color: #1fbca5;
@@ -23,10 +24,12 @@ li {
   list-style: none;
   padding: 0;
   text-transform: capitalize;
+  color: #1fbca5;
 }
 li:first-letter {
   text-transform: capitalize;
 }
+
 .temperature {
   font: 60px;
   font-weight: 400;
@@ -34,11 +37,9 @@ li:first-letter {
 }
 .today {
   font-size: 15px;
+  color: #1fbca5;
 }
-.prediction {
-  text-align: left;
-  font-size: 15px;
-}
+
 .signature {
   font-size: 15px;
 }
@@ -46,6 +47,7 @@ li:first-letter {
 .weather-app {
   border: 1px solid #7c52ef;
   border-radius: 40px;
+  background: white;
 
   padding: 20px;
 }
@@ -64,7 +66,7 @@ li:first-letter {
   top: -34px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #7c52ef;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -88,6 +90,30 @@ li:first-letter {
   border-radius: 4px;
   border: 1px solid #7c52ef;
 }
-.weather-emojis {
+
+.weather-forecast h3 {
   color: #1fbca5;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+  color: #1fbca5;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: #1fbca5;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
